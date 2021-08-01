@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
+	<link rel="stylesheet" href="https://tam-dev.github.io/tam-shop/css/normalize.css">
+	<link rel="stylesheet" href="https://tam-dev.github.io/tam-shop/css/style.css">
+	<title>Barbershop</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<header class="page-header">
+		<div class="page-header__logo">
+			<picture>
+				<source
+					media="(min-width: 1200px)"
+					srcset="images/logotype-desktop.png"
+					type="image/svg+xml">
+				<source
+					media="(min-width: 768px)"
+					srcset="images/logotype-desktop.png"
+					type="image/svg+xml">
+				<source
+					srcset="images/logotype-desktop.png"
+					type="image/svg+xml">
+				<img
+				src="https://tam-dev.github.io/tam-shop/images/big_logo3.png"
+				srcset="https://tam-dev.github.io/tam-shop/logotype-desktop.png 1200w,
+						https://tam-dev.github.io/tam-shop/logotype-desktop.pngg 768w"
+				alt="Barbershop">
+			</picture>
+		</div>
+
+		<nav class="main-nav main-nav--closed main-nav--nojs">
+			<button class="main-nav__toggle" type="button">Open menu</button>
+			<div class="main-nav__wrapper">
+				<ul class="main-nav__items">
+					<li class="main-nav__item"><a href="index.html">Main page</a></li>
+					<li class="main-nav__item"><a href="photo.html">Our works</a></li>
+					<li class="main-nav__item main-nav__item--active"><a>Make appointment</a></li>
+					<li class="main-nav__item main-nav__item--disabled"><a>Contacts</a></li>
+				</ul>
+				<ul class="main-nav__login">
+					<li class="main-nav__login-item"><a class="main-nav__user-login" herf="" title="Login">	Login</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<div class="page-wrapper polygon polygon__footer--mobile">
+		<div class="page">
+			<section class="register">
+				<h1 class="page__title">Make appointment</h1>
+				<a href="index.html" class="btn-to-index">to Main page</a>
+				<form action="https://tam-dev.github.io/tam-shop/url" method="post" class="register-form">
+
+					<fieldset class="register-form__name-fieldset">
+						<div class="register-form__name-wrapper">
+						<input name="name" type="text" placeholder="Name" class="input-text-barbershop register-form__name">
+						<input name="surname" type="text" placeholder="Lastname" class="input-text-barbershop register-form__surname">
+						</div>
+					</fieldset>
+
+					<fieldset class="register-form__contacts-fieldset">
+						<div class="register-form__contacts-wrapper">
+						<input name="telephone" type="tel" placeholder="Phone number" class="input-text-barbershop register-form__tel">
+						<input name="email" type="email" placeholder="Your e-mail" class="input-text-barbershop register-form__email">
+						</div>
+					</fieldset>
+					<textarea name="message" placeholder="Additional information for the master" id="message" cols="30" rows="6" class="register-form__message"></textarea>
+					<fieldset class="register-form__radio-fieldset">
+						<legend class="register-form__fieldset-title">Choose a beard style</legend>
+						<div class="register-form__radio-wrapper">
+						<input type="radio" name="select-beard" id="beard-1" class="input-radio-barbershop register-form__beard-1" checked>
+						<label class="register-form__beard-label register-form__admiral-label" for="beard-1">Admiral</label>
+						<input type="radio" name="select-beard" id="beard-2" class="input-radio-barbershop register-form__beard-1">
+						<label class="register-form__beard-label register-form__lumberjack-label" for="beard-2">Lumberjack</label>
+						<input type="radio" name="select-beard" id="beard-3" class="input-radio-barbershop register-form__beard-1">
+						<label class="register-form__beard-label register-form__polar-label" for="beard-3">Explorer</label>
+						<input type="radio" name="select-beard" id="beard-4" class="input-radio-barbershop register-form__beard-1">
+						<label class="register-form__beard-label register-form__boyar-label" for="beard-4">Luminary</label>
+						<input type="radio" name="select-beard" id="beard-5" class="input-radio-barbershop register-form__beard-1">
+						<label class="register-form__beard-label register-form__sage-label" for="beard-5">Sage</label>
+						</div>
+					</fieldset>
+					<fieldset class="register-form__checkbox-fieldset">
+						<legend class="register-form__fieldset-title">Additional services</legend>
+						<div class="register-form__checkbox-wrapper">
+						<input type="checkbox" id="checkbox-1" class="input-checkbox-barbershop register-form__checkbox-1" checked>
+						<label for="checkbox-1" class="register-form__checkbox-label">Tint beard</label>
+						<input type="checkbox" id="checkbox-2" class="input-checkbox-barbershop register-form__checkbox-1" checked>
+						<label for="checkbox-2" class="register-form__checkbox-label">Wind the mustache</label>
+						<input type="checkbox" id="checkbox-3" class="input-checkbox-barbershop register-form__checkbox-1">
+						<label for="checkbox-3" class="register-form__checkbox-label">To comb a beard</label>
+						<input type="checkbox" id="checkbox-4" class="input-checkbox-barbershop register-form__checkbox-1">
+						<label for="checkbox-4" class="register-form__checkbox-label">Trim the temple</label>
+						<input type="checkbox" id="checkbox-5" class="input-checkbox-barbershop register-form__checkbox-1">
+						<label for="checkbox-5" class="register-form__checkbox-label">Remove gray hair</label>
+						<input type="checkbox" id="checkbox-6" class="input-checkbox-barbershop register-form__checkbox-1">
+						<label for="checkbox-6" class="register-form__checkbox-label">Polish bald spot</label>
+						</div>
+					</fieldset>
+						<button name="register" class="register-form__btn">Submit a request</button>
+				</form>
+			</section>
+		</div>
+	</div>
+	<footer class="page-footer">
+		<div class="page-footer__wrapper">
+			<div class="page-footer__contact-info">
+				<b class="contact-info__title">Barbershop</b>
+				<p class="contact-info__adress">111 Bloor St. West, Toronto</p>
+				<a href="tel::+7-812-555-66-66" class="contact-info__telephone">+1 (614)-555-7777</a>
+			</div>
+			<div class="page-footer__socials-wrapper">
+				<span>Let's be friends!</span>
+				<div class="page-footer__socials">
+					<a href="form.html#" class="social__icon social__icon--fb"></a>
+					<a href="form.html#" class="social__icon social__icon--is"></a>
+				</div>
+			</div>
+			<div class="page-footer__developed-wrapper">
+			<div class="page-footer__developed">
+				<span>Develop:</span>
+				<a href="https://github.com/tam-dev" class="developed__link">
+				<span class="developed__label">tam-dev.github.io</span></a>
+			</div>
+			</div>
+		</div>
+	</footer>
+	<div class="login-form__wrapper">
+		<form action="form.html" method="post" class="login-form">
+			<legend class="login-form__title">My Account</legend>
+			<p class="login-form__some-text">Enter you login and password</p>
+			<label for="login" class="login-form__label login-form__login-label">
+				<input type="text" class="login-form__input-field login-form__login-field" name="login" id="login" placeholder="Login" autofocus>
+			</label>
+			<label for="password" class="login-form__label login-form__password-label"><input type="password" class="login-form__input-field login-form__password__field" id="password" placeholder="Password"></label>
+			<input type="checkbox" id="checkbox" class="login-form__checkbox">
+			<label for="checkbox" class="login-form__checkbox-label">Remember me</label>
+			<a href="form.html#" class="login-form__link">I forgot a passord!</a>
+			<button class="login-form__btn" type="button" name="log-in">Login<span class="mobile--hidden">My Account</spam?</button>
+			<button type="button" class="login-form__btn-close ghost-btn">Close</button>
+		</form>
+	</div>
+		<script>
+		var navMain = document.querySelector('.main-nav');
+		var navToggle = document.querySelector('.main-nav__toggle');
+
+		navMain.classList.remove('main-nav--nojs');
+
+		navToggle.addEventListener('click', function() {
+			if (navMain.classList.contains('main-nav--closed')) {
+				navMain.classList.remove('main-nav--closed');
+				navMain.classList.add('main-nav--opened');
+			} else {
+				navMain.classList.add('main-nav--closed');
+				navMain.classList.remove('main-nav--opened');
+			}
+		});
+		</script>
+		<script type="text/javascript">
+		var loginLink = document.querySelector('.main-nav__user-login');
+		var loginForm = document.querySelector('.login-form__wrapper');
+		var formClose = document.querySelector('.login-form__btn-close');
+
+		loginLink.addEventListener('click', function() {
+			loginForm.classList.toggle('login-form--show');
+		});
+		formClose.addEventListener('click', function() {
+			loginForm.classList.remove('login-form--show');
+		});
+		</script>
+	</body>
+	</html>
